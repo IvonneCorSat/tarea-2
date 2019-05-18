@@ -1,0 +1,232 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Menu</h1>
+	</div>
+	<div data-role="content">
+    <p><img src="../Clase 2/Imagenes/1543335960_477728_1543336038_noticia_normal.jpg" width="949" height="296"></p>
+    <p>Descripción.</p>
+    
+  <p>Microsoft Surface es una serie de dispositivos de pantalla táctil (tabletas, computadoras portátiles y de escritorio y pizarras interactivas) diseñadas y comercializadas por Microsoft.
+El lanzamiento de la primera versión de tabletas fue anunciado el 18 de junio de 2012, por el CEO de Microsoft Steve Ballmer en Los Ángeles.1Los modelos más recientes son la Surface Pro 4 lanzada el 6 de octubre de 2015, y la Surface Book, lanzada el 6 de octubre de 2015. Estas tabletas destacan principalmente por su teclado extraíble y por el "kickstand" un soporte integrado que permite ajustar la pantalla a la altura deseada.
+Y la última revolución Surface Book que revoluciona sus principios "la tablet que cambia tu laptop" presentada en Nueva York el día 6 de octubre de 2015 Que conmociona con su doble GPU incluido en el teclado y en su pantalla desprendible
+Aparte de la gama de tabletas también existe una pantalla táctil de grandes dimensiones llamada Surface Hub, este producto está enfocado principalmente al sector empresarial.
+</p>
+    <ul data-role="listview">
+		<li><a href="#page2">Modelos Surface</a></li>
+            <li><a href="#page3">Listas Colapsables</a></li>
+			<li><a href="#page4">Lista Nevbar</a></li>
+            <li><a href="#page5">Botones Poput</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>https://www.microsoft.com/es-es/surface</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Modelos Surface.</h1>
+	</div>
+	<div data-role="content">	
+    
+    <table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+     <thead>
+       <tr><!--Pone Elementos en las Columnas-->
+         <th data-priority="1">-</th>
+         <th>Microsoft.</th>
+         <th data-priority="2">Pantalla.</th>
+<th data-priority="2">Procesador.</th>
+         <th data-priority="1"><abbrev>RAM.</abbrev></th>
+<th data-priority="2">Graficos.</th>
+  <th data-priority="1"><abbrev>Puertos.</abbrev></th>
+<th data-priority="2">Autonomía.</th>
+<th data-priority="2">OS.</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+
+         <th>1</th>
+         <td><a href="https://www.microsoft.com/es-es/surface/devices/surface-go/tech-specs" data-rel="external"> Microsoft Surface Go</a></td>
+         <td>10 Pulgadas</td>
+         <td>Intel Pentium Gold 4415Y</td>
+         <td>4 u 8 GB</td>
+<td>Intel HD Graphics 615</td>
+
+<td>1 USB</td>
+<td>9 horas</td>
+<td>Windows 10 S(Actualizable)</td>
+       </tr>
+
+
+<tr>
+         <th>2</th>
+         <td><a href="https://www.microsoft.com/es-es/surface/devices/surface-pro-6/tech-specs" data-rel="external">Microsoft Surface Pro 6 </a></td>
+         <td>12,3 Pulgadas</td>
+         <td>Intel core i5 o i7 de 8a generación</td>
+         <td>8 a 16GB</td>
+<td>Intel HD Graphics 615</td>
+<td>1 USB C y Auriculares</td>
+<td>13,5 horas</td>
+<td>Windows 10 Pro</td>
+       </tr>
+
+
+ <tr>
+
+         <th>3</th>
+         <td><a href="https://www.microsoft.com/es-es/surface/devices/surface-laptop-2/tech-specs" data-rel="external"> Microsoft Surface Laptop 2</a></td>
+         <td>13,5 Pulgadas</td>
+         <td>Intel Core i5 e i7 de 8a generación</td>
+         <td>8 u 16 GB</td>
+<td>Intel HD Graphics 620</td>
+
+<td>1 USB Mini DisplayPort</td>
+<td>14,5 horas</td>
+<td>Windows 10 S(Actualizable)</td>
+       </tr>
+
+
+<tr>
+         <th>4</th>
+         <td><a href="https://www.microsoft.com/es-es/surface/devices/surface-book-2/tech-specs" data-rel="external">Microsoft Surface Book 2 </a></td>
+         <td>13,5 o 15 Pulgadas</td>
+         <td>Intel core i5 o i7 de 8a generación</td>
+         <td>4, 8 a 16GB</td>
+<td>Intel HD Graphics</td>
+<td>2 USB, 1 USB tipo C y Auriculares y SD</td>
+<td>17 horas</td>
+<td>Windows 10 Pro</td>
+       </tr>
+
+ <th>5</th>
+         <td><a href="https://www.microsoft.com/es-es/surface/devices/surface-studio-2/tech-specs" data-rel="external">Microsoft Surface Studio 2 </a></td>
+         <td>Pixelsense de 28 pulgadas</td>
+         <td>Intel core i7-7820HQ</td>
+         <td>16GB o 32GB</td>
+<td>Nvidia GeForce GTX 1060 o 1070</td>
+<td>4 USB 3.0 SD, Tipo C y Auriculares Gigabit Ethernet</td>
+<td>es un ordenador PC</td>
+<td>Windows 10 Pro</td>
+       </tr>
+
+    </tbody>
+   </table>
+    
+  		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>https://www.microsoft.com/es-es/surface</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Listas Colapsables</h1>
+	</div>
+	<div data-role="content">
+    
+    </div>
+	<div data-role="content" data-role="Popup">			
+    <div class="w3-container w3-card w3-indigo">
+  <h1>Listas colapsable </h1>
+</div>
+<ul class="w3-ul">
+  <li>
+  
+<center>  
+<div data-role="navbar" data-direction="center">
+<center>  
+    <ul>
+        <li><a href="#page" class="ui-btn-active">Inicio</a></li>
+        <li><a href="#page2" data-position="fixed">Descripción</a></li>
+        <li><a href="#page2">Surface</a></li>
+       
+
+    </ul>
+</div>
+</center>
+    
+    
+	</div>
+	<div data-role="footer">
+		<h4>https://www.microsoft.com/es-es/surface</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+ 
+		<h1>Lista Nevbar</h1>
+	</div>
+	<div data-role="content">
+    
+    
+
+	<div data-role="navbar">
+    <ul>
+        <li><a href="#" class="ui-btn-active">Surface</a></li>
+        <li><a href="#">Inicio.</a></li>
+        <li><a href="#">Modelos Surface </a></li>
+        <li><a href="page4">Listas Colapsables</a></li>
+        <li><a href="page5">Listas Nevbar</a></li>
+<li><a href="page5">Botones </a></li>
+       
+    </ul>
+	</div>
+  	
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>https://www.microsoft.com/es-es/surface</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page5">
+	<div data-role="header">
+ 
+		<h1>Botones</h1>
+	</div>
+	<div data-role="content">
+       
+
+
+       
+    </ul>
+</div>
+</center>
+
+
+
+		<a href="#page" class="ui-btn">Inicio</a>
+   		<a href="#page2" class="ui-btn">Modelos Surface</a>
+		<a href="#page5" class="ui-btn">Listas Colapsables</a>
+        
+        <a href="#page5" class="ui-btn">Lista Nevbar</a>
+        <a href="#page5" class="ui-btn">Botones</a>
+	</div>
+	
+</div>
+
+
+	<div data-role="footer" data-position="fixed">
+		<h4>https://www.microsoft.com/es-es/surface</h4>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
